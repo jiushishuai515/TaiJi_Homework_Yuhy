@@ -1,0 +1,23 @@
+management:
+  security:
+    enabled: false #关掉安全认证
+  port: 8888 #管理端口调整成8888
+#  context-path: /abc #actuator的访问路径
+  
+#security:
+#  user:
+#    name: admin 
+#    password: admin
+
+
+endpoints:
+  actuator:
+    enabled: true
+#  shutdown:
+#    enabled: true
+  
+    
+info:
+   app:
+      name: spring-boot-actuator
+      version: 1.0.0

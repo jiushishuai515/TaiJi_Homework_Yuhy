@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean id="beanOne" class="com.taiji.yuhongyue.bean.BeanOne">
+		<property name="name" value="im beanOne!!"/>
+		<property name="msg" value="one!!!" />
+		<constructor-arg type="String" value="aaaa"></constructor-arg>
+		<constructor-arg type="Integer" value="1"></constructor-arg>
+	</bean>
+	<bean id="beanTwo" class="com.taiji.yuhongyue.bean.BeanTwo">
+		<property name="name" value="im beanTwo!!"/>
+		<property name="msg" value="two!!!" />
+		<constructor-arg type="String" value="bbbb"></constructor-arg>
+		<constructor-arg type="Integer" value="1"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="beanBoth" class="com.taiji.yuhongyue.bean.BeanBoth">
+		
+		<constructor-arg>
+			<ref bean="beanOne" />
+		</constructor-arg>
+		<constructor-arg ref="beanTwo" />
+		
+		<constructor-arg type="int" value="1" />
+		<property name="beanNo1">
+			<ref bean="beanOne" />
+		</property>
+		<property name="beanNo2" ref="beanTwo" />
+		<property name="i" value="1" />
+	</bean>
+
+	
+
+</beans>
