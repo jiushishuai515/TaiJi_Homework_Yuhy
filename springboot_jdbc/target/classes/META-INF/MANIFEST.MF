@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot_jdbc
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Older_Fisher
+Implementation-Vendor-Id: com.taiji.yuhongyue
+Build-Jdk: 1.8.0_202
+Implementation-URL: http://projects.spring.io/spring-boot/springboot_j
+ dbc/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
