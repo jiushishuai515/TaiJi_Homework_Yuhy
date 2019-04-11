@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+<div align="center">
+success!欢迎来到home
+<a>退出请点击按钮</a>
+<form  th:action="@{/logout}" method="post">
+<input type="submit" value="登出"></input>
+</form>
+</div>
+</body>
+</html>
