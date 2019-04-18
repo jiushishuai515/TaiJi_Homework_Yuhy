@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="right">
+		<a href="?lang=en_US"> 英语</a>
+		<a href="?lang=zh_CN"> 中文</a>
+	</div>
+
+	<h1 align="center" class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please Sign In</h1>
+	<!-- 表单提交用户信息,注意字段的设置,直接是*{} -->
+
+
+	<div align="center">
+		<form action="#" th:action="@{/loginSubmit}" method="post">
+
+			<label class="inputUsername" th:text="#{login.username}">Username</label>
+			<input type="text" name="username" />
+			<label for="inputPassword" class="sr-only" th:text="#{login.password}">Password</label>
+			<input type="text" name="password" />
+			<input type="submit" th:value="#{login.btn}" />
+		</form>
+		<span style="font-size: 12px; color: red" th:text="${error}"></span>
+	</div>
+	<div align="center">
+		<a th:href="reg">注册</a>
+	</div>
+
+
+
+</body>
+</html>
